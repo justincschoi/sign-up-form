@@ -1,6 +1,20 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+:root {
+    --header: 25vh;
+    --submit: 20vh;
+    --form: calc(100vh - calc(var(header) + calc(var(submit))));
+    --logo-width: 30vw;
+    --main-width: 70vw;
+}
+
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 main {
@@ -8,9 +22,22 @@ main {
     height: 100vh;
 }
 
+header {
+    height: var(--header);
+    width: var(--main-width);
+    background-color: rgb(149, 133, 123, .5);
+    color: white;
+    font-weight: bold;
+}
+
+header p {
+    max-width: 35vw;
+    margin: 1rem;
+}
+
 .image-container {
     position: relative;
-    width: 40vw;
+    width: var(--logo-width);
     background: no-repeat url('images/rafal-jedrzejek-LZYOvgI_1_Q-unsplash.jpg');
     background-size: cover;
 }
@@ -20,7 +47,7 @@ main {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 100%;
+    width: var(--logo-width);
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     text-align: center;
@@ -42,5 +69,5 @@ main {
 .form-container {
     display: flex;
     flex-direction: column;
-    width: 55vw;
+    width: var(--main-width);
 }
