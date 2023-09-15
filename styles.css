@@ -30,6 +30,12 @@ header {
     font-weight: bold;
 }
 
+form {
+    background-color: #bdc5ca;
+    color: white;
+    font-weight: bold;
+}
+
 header p {
     max-width: 35vw;
     margin: 1rem;
