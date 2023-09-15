@@ -33,6 +33,7 @@ header {
 header p {
     max-width: 35vw;
     margin: 1rem;
+    margin-top: 4rem;
 }
 
 .image-container {
@@ -70,4 +71,17 @@ header p {
     display: flex;
     flex-direction: column;
     width: var(--main-width);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 35vw;
+    margin: 1rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 1rem;
 }
