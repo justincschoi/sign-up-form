@@ -23,7 +23,7 @@ main {
 }
 
 header {
-    height: var(--header);
+    min-height: var(--header);
     width: var(--main-width);
     background-color: rgb(149, 133, 123, .5);
     color: white;
@@ -31,6 +31,7 @@ header {
 }
 
 form {
+    min-height: var(--form);
     background-color: #bdc5ca;
     color: white;
     font-weight: bold;
